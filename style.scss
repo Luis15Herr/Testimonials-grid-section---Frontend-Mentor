@@ -1,0 +1,116 @@
+$Moderateviolet: hsl(263, 55%, 52%);
+$Verydarkgrayishblue: hsl(217, 19%, 35%);
+$Verydarkblackishblue: hsl(219, 29%, 14%);
+$White: hsl(0, 0%, 100%);
+$Lightgray: hsl(0, 0%, 81%);
+$Lightgrayishblue: hsl(210, 46%, 95%);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  font-family: "Barlow Semi Condensed", sans-serif;
+}
+body {
+  display: flex;
+  align-items: center;
+  background-color: $Lightgrayishblue;
+  font-size: 13px;
+  &::after {
+    content: "";
+    background-image: url(./design/desktop-design.jpg);
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+}
+
+.main {
+  display: grid;
+  width: 1440px;
+  margin: auto;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 280px 265px;
+  grid-column-gap: 30px;
+  grid-row-gap: 25px;
+  padding: 0 165px;
+}
+
+.box {
+  border-radius: 7px;
+  padding: 23px 30px;
+}
+.box__img {
+  height: 32px;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+.user__info {
+  display: inline-block;
+  margin-left: 13px;
+  position: relative;
+  top: -2px;
+}
+.user__name {
+  display: block;
+}
+.sub__name {
+  font-size: 11px;
+}
+
+.box__content {
+  padding: 0 2px;
+}
+.box__important {
+  font-size: 1.56em;
+  display: block;
+  margin-top: 13px;
+  margin-bottom: 16px;
+}
+.box__normal {
+  line-height: 1.4;
+  letter-spacing: 0.02px;
+}
+
+.box1 {
+  grid-area: 1 / 1 / 2 / 3;
+  background-color: $Moderateviolet;
+}
+.box2 {
+  grid-area: 1 / 3 / 2 / 4;
+  background-color: $Verydarkgrayishblue;
+}
+.box3 {
+  grid-area: 1 / 4 / 3 / 5;
+  background-color: $White;
+}
+.box4 {
+  grid-area: 2 / 1 / 3 / 2;
+  background-color: $White;
+}
+.box5 {
+  grid-area: 2 / 2 / 3 / 4;
+  background-color: $Verydarkblackishblue;
+}
+.box--font-white {
+  color: $White;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  display: none;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}

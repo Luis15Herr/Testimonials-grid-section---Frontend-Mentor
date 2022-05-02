@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Barlow Semi Condensed", sans-serif;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #ecf2f8;
+  font-size: 13px;
+}
+
+body::after {
+  content: "";
+  background-image: url(./design/desktop-design.jpg);
+  position: absolute;
+  pointer-events: none;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.main {
+  display: -ms-grid;
+  display: grid;
+  width: 1440px;
+  margin: auto;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: 280px 265px;
+      grid-template-rows: 280px 265px;
+  grid-column-gap: 30px;
+  grid-row-gap: 25px;
+  padding: 0 165px;
+}
+
+.box {
+  border-radius: 7px;
+  padding: 23px 30px;
+}
+
+.box__img {
+  height: 32px;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+.user__info {
+  display: inline-block;
+  margin-left: 13px;
+  position: relative;
+  top: -2px;
+}
+
+.user__name {
+  display: block;
+}
+
+.sub__name {
+  font-size: 11px;
+}
+
+.box__content {
+  padding: 0 2px;
+}
+
+.box__important {
+  font-size: 1.56em;
+  display: block;
+  margin-top: 13px;
+  margin-bottom: 16px;
+}
+
+.box__normal {
+  line-height: 1.4;
+  letter-spacing: 0.02px;
+}
+
+.box1 {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: 1 / 1 / 2 / 3;
+  background-color: #7541c8;
+}
+
+.box2 {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-area: 1 / 3 / 2 / 4;
+  background-color: #48556a;
+}
+
+.box3 {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 1;
+  grid-area: 1 / 4 / 3 / 5;
+  background-color: white;
+}
+
+.box4 {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-area: 2 / 1 / 3 / 2;
+  background-color: white;
+}
+
+.box5 {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: 2 / 2 / 3 / 4;
+  background-color: #19212e;
+}
+
+.box--font-white {
+  color: white;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  display: none;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+/*# sourceMappingURL=style.css.map */
