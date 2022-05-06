@@ -12,7 +12,7 @@
       href="./images/favicon-32x32.png"
     />
 
-    <title>Frontend Mentor | [Challenge Name Here]</title>
+    <title>Frontend Mentor | Testimonial Grid Section</title>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <link rel="stylesheet" href="style.css" />
@@ -28,10 +28,14 @@
     <div class="main">
       <div class="box1 box box--font-white">
         <div class="box__top">
-          <img src="./images/image-daniel.jpg" alt="" class="box__img" />
-          <div class="user__info">
-            <span class="user__name"> Daniel Clifford </span>
-            <span class="sub__name"> Verified Graduate </span>
+          <img
+            src="./images/image-daniel.jpg"
+            alt=""
+            class="box__img box__img--borderPurple"
+          />
+          <div class="box__user-info">
+            <span class="box__user-name"> Daniel Clifford </span>
+            <span class="box__user-metainfo"> Verified Graduate </span>
           </div>
         </div>
         <div class="box__content">
@@ -54,9 +58,9 @@
       <div class="box2 box box--font-white">
         <div class="box__top">
           <img src="./images/image-jonathan.jpg" alt="" class="box__img" />
-          <div class="user__info">
-            <span class="user__name">Jonathan Walters </span>
-            <span class="sub__name">Verified Graduate </span>
+          <div class="box__user-info">
+            <span class="box__user-name">Jonathan Walters </span>
+            <span class="box__user-metainfo">Verified Graduate </span>
           </div>
         </div>
         <div class="box__content">
@@ -73,13 +77,13 @@
       <div class="box3 box">
         <div class="box__top">
           <img src="./images/image-kira.jpg" alt="" class="box__img" />
-          <div class="user__info">
-            <span class="user__name"> Kira Whittle </span>
-            <span class="sub__name">Verified Graduate </span>
+          <div class="box__user-info">
+            <span class="box__user-name"> Kira Whittle </span>
+            <span class="box__user-metainfo">Verified Graduate </span>
           </div>
         </div>
         <div class="box__content">
-          <span class="box__important"
+          <span class="box__important box__important--marginB"
             >Such a life-changing experience. Highly recommended!
           </span>
           <span class="box__normal"
@@ -101,13 +105,13 @@
       <div class="box4 box">
         <div class="box__top">
           <img src="./images/image-jeanette.jpg" alt="" class="box__img" />
-          <div class="user__info">
-            <span class="user__name">Jeanette Harmon </span>
-            <span class="sub__name">Verified Graduate </span>
+          <div class="box__user-info">
+            <span class="box__user-name">Jeanette Harmon </span>
+            <span class="box__user-metainfo">Verified Graduate </span>
           </div>
         </div>
         <div class="box__content">
-          <span class="box__important"
+          <span class="box__important box__important--marginB"
             >An overall wonderful and rewarding experience</span
           >
           <span class="box__normal"
@@ -118,14 +122,18 @@
       </div>
       <div class="box5 box box--font-white">
         <div class="box__top">
-          <img src="./images/image-patrick.jpg" alt="" class="box__img" />
-          <div class="user__info">
-            <span class="user__name">Patrick Abrams </span>
-            <span class="sub__name">Verified Graduate </span>
+          <img
+            src="./images/image-patrick.jpg"
+            alt=""
+            class="box__img box__img--borderPurple"
+          />
+          <div class="box__user-info">
+            <span class="box__user-name">Patrick Abrams </span>
+            <span class="box__user-metainfo">Verified Graduate </span>
           </div>
         </div>
         <div class="box__content">
-          <span class="box__important"
+          <span class="box__important box__important--marginB"
             >Awesome teaching support from TAs who did the bootcamp themselves.
             Getting guidance from them and learning from their experiences was
             easy.</span
@@ -135,6 +143,7 @@
             really refreshing. The program gave me the confidence necessary to
             be able to go out in the world and present myself as a capable
             junior developer. The standard is above the rest. You will get the
+            <br />
             personal attention you need from an incredible community of smart
             and amazing people. ”</span
           >
